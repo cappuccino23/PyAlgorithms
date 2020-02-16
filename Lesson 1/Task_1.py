@@ -1,5 +1,16 @@
 #Задача 1
 #Найти сумму и произведение цифр трехзначного числа, которое вводит пользователь.
-# Алгоритм - https://drive.google.com/file/d/1YlfSxx4N27j73qq5emXOdcwZQW38Mwqe/view?usp=sharing
+# Блок-схема - https://drive.google.com/file/d/1YlfSxx4N27j73qq5emXOdcwZQW38Mwqe/view?usp=sharing
+
+number = list(input('Введите трехзначное число: '))
+
+a = int(number[0])
+b = int(number[1])
+c = int(number[2])
+
+sum = a + b + c
+multiplication = a * b * c
 
 
+print('Число:', sum)
+print('Число:', multiplication)
