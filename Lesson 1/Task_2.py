@@ -1,6 +1,6 @@
 # Задача 2
 # Пользователь вводит две буквы. Определить, на каких местах алфавита они стоят, и сколько между ними находится букв.
-# Блок-схема - https://drive.google.com/file/d/1XYYERoi2C27xupOds9ptWG8Y45rQ9Tqn/view?usp=sharing
+# Блок-схема - https://drive.google.com/open?id=12_vikV1aOUpHFTK4s3LvkdwYNfzEpGa1
 
 letter_1 = (input('Введите первую букву от a до z: '))
 letter_2 = (input('Введите вторую букву от a до z: '))

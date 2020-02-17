@@ -1,6 +1,6 @@
 # Задача 3
 # Пользователь вводит номер буквы в алфавите. Определить, какая это буква.
-# Алгоритм - https://drive.google.com/file/d/1IeVGgQunwZRxzvREg6KwC__F7kuJoIaK/view?usp=sharing
+# Алгоритм - https://drive.google.com/file/d/1XYYERoi2C27xupOds9ptWG8Y45rQ9Tqn/view?usp=sharing
 
 letter = int(input('Введите число от 1 до 27: '))
 

@@ -1,6 +1,6 @@
 #Задача 1
-#Найти сумму и произведение цифр трехзначного числа, которое вводит пользователь.
-# Блок-схема - https://drive.google.com/file/d/1YlfSxx4N27j73qq5emXOdcwZQW38Mwqe/view?usp=sharing
+# Найти сумму и произведение цифр трехзначного числа, которое вводит пользователь.
+# Блок-схема - https://drive.google.com/open?id=1YlfSxx4N27j73qq5emXOdcwZQW38Mwqe
 
 number = list(input('Введите трехзначное число: '))
 
