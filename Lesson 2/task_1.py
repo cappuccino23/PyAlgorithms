@@ -1,4 +1,4 @@
-#Задача 1
+# Задача 1
 
 # Написать программу, которая будет складывать, вычитать, умножать или делить два числа.
 # Числа и знак операции вводятся пользователем. После выполнения вычисления программа не должна
@@ -9,15 +9,43 @@
 
 # Блок-схема - https://drive.google.com/open?id=1YlfSxx4N27j73qq5emXOdcwZQW38Mwqe
 
-number = list(input('Введите трехзначное число: '))
-
-n = int(number[0])
-m = int(number[1])
-d = int(number[2])
-
-sum = n + m + d
-multiplication = n * m * d
+s = 0
+mark = ''
 
 
-print('Число:', sum)
-print('Число:', multiplication)
+
+
+
+    number_1 = int(input('Введите первое число: '))
+    number_2 = int(input('Введите первое число: '))
+
+    mark = (input('Введите знак операции: '))
+
+    while mark != '/' or mark != '+' or mark != '*' or mark != '-':
+
+
+        if mark == '/':
+            if number_2 == 0:
+                print('Делить на 0 нельзя')
+                break
+            else:
+                s = number_1 / number_2
+
+        if mark == '*':
+            s = number_1 * number_2
+
+        if mark == '+':
+            s = number_1 + number_2
+
+        if mark == '-':
+            s = number_1 - number_2
+
+        print(s)
+
+
+
+
+else:
+    print('Выход из программы')
+
+
