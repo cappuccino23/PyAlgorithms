@@ -13,7 +13,7 @@ max_sum_numb = 0 #максимальная сумма цифр числа
 
 while number != 0:
 
-    max_n = number
+    max_n = number #фиксируем число, которому соответствует сумма его цифр
     sum = 0
 
     while number > 0:
