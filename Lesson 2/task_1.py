@@ -7,7 +7,7 @@
 # знак (не '0', '+', '-', '*', '/'), то программа должна сообщать ему об ошибке и снова запрашивать
 # знак операции. Также сообщать пользователю о невозможности деления на ноль, если он ввел 0 в качестве делителя.
 
-# Блок-схема - https://drive.google.com/open?id=1YlfSxx4N27j73qq5emXOdcwZQW38Mwqe
+# Блок-схема - https://drive.google.com/file/d/1jQa7d58mBAkGdmxGlhUsw4-xkS_FZyrQ/view?usp=sharing
 
 s = 0
 mark = ''
