@@ -5,10 +5,15 @@
 
 # блок-схема -  https://drive.google.com/file/d/1LqpzOj-dasxTpqaiWOXqG0MdNu2y4Zxk/view?usp=sharing
 
-a = (input('Введите число: '))
-b = ''
+a = int(input('Введите число: '))
+b = 0
+c = ''
 
-for i in a:
-    b = i + b
+while a > 0:
 
-print('Вывод в обратном порядке', b)
+    b = a % 10
+    a = a // 10
+
+    c = c + str(b)
+
+print('Вывод в обратном порядке', c)
