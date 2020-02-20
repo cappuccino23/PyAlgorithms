@@ -10,16 +10,13 @@
 # Блок-схема - https://drive.google.com/file/d/1jQa7d58mBAkGdmxGlhUsw4-xkS_FZyrQ/view?usp=sharing
 
 s = 0
-mark = ''
 
 number_1 = int(input('Введите первое число: '))
 number_2 = int(input('Введите первое число: '))
 mark = (input('Введите знак операции: '))
 
-if mark == 0:
-    print('Выход из программы')
+while mark != 0:
 
-else:
     if mark == '/':
         if number_2 == 0:
             print('Делить на 0 нельзя')
@@ -36,7 +33,7 @@ else:
     if mark == '-':
         s = number_1 - number_2
 
-    print('Результат:', s)
+print('Результат:', s)
 
 
 
