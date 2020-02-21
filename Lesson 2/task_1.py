@@ -12,29 +12,39 @@
 s = 0
 
 number_1 = int(input('Введите первое число: '))
-number_2 = int(input('Введите первое число: '))
+number_2 = int(input('Введите второе число: '))
 mark = (input('Введите знак операции: '))
 
 while mark != 0:
 
-    if mark == '/':
-        if number_2 == 0:
-            print('Делить на 0 нельзя')
-            quit()
-        else:
-            s = number_1 / number_2
+    while mark == '/' or mark == '*' or mark == '+' or mark == '-':
 
-    if mark == '*':
-        s = number_1 * number_2
+        if mark == '/':
 
-    if mark == '+':
-        s = number_1 + number_2
+            if number_2 == 0:
+                print('Делить на 0 нельзя')
+                quit()
+            else:
+                s = number_1 / number_2
 
-    if mark == '-':
-        s = number_1 - number_2
+        if mark == '*':
+            s = number_1 * number_2
 
-print('Результат:', s)
+        if mark == '+':
+            s = number_1 + number_2
 
+        if mark == '-':
+            s = number_1 - number_2
 
+        print('Результат:', s)
 
+        number_1 = int(input('Введите первое число: '))
+        number_2 = int(input('Введите второе число: '))
+        mark = (input('Введите знак операции: '))
 
+    else:
+        mark = (input('Введите знак операции: '))
+
+else:
+    print('Программа завершила работу')
+    quit()
