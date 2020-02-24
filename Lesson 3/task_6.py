@@ -1,12 +1,9 @@
 # Задача 6
 # В одномерном массиве найти сумму элементов, находящихся между минимальным и максимальным элементами.
 # Сами минимальный и максимальный элементы в сумму не включать.
-# Блок-схема -
+# Блок-схема - https://drive.google.com/file/d/12CsYJTtRDX6x2_PTF3OTRJ2VzsGhR0zL/view?usp=sharing
 
 from random import randint
-
-#my_mssv = [8, 3, 15, 6, 4, 2]
-#my_mssv = [8, 3, 2, 6, 4, 15]
 
 my_mssv = [randint(0, 100) for i in range(10)]
 print('Исходный массив:', my_mssv)
@@ -29,9 +26,9 @@ for i in my_mssv:
         mn = my_mssv.index(i)
 
 print('max -', max_el, '\nmin -', min_el)
+
 if mx > mn:
     print('Массив элементов между min и max', my_mssv[mn+1:mx])
-
     for i in my_mssv[mn+1:mx]:
         mssv.append(i)
 
