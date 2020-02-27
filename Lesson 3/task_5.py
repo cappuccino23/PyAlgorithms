@@ -6,6 +6,8 @@
 from random import randint
 
 #my_mssv = [39, -32, -16, 30, -85, 83, 83, -44, 39]
+#my_mssv = [-39, 32, 16, 30, 85, 83, 83, 44, 39]
+
 my_mssv = [randint(-100, 100) for i in range(10)]
 print('Исходный массив:', my_mssv)
 
@@ -22,5 +24,9 @@ for i in my_mssv:
         min_el = i
         position = my_mssv.index(i)
 
-print('Позиция максимального отрицательного элемента - ', position + 1)
-print('Максимальный отрицательный элемент - ', min_el)
+
+if position >= 0:
+    print('Позиция максимального отрицательного элемента - ', position)
+    print('Максимальный отрицательный элемент - ', min_el)
+else:
+    print('В массиве отсутствуют отрицательные элементы.')
