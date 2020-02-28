@@ -5,11 +5,11 @@
 
 from random import randint
 
-my_mssv = [randint(0, 100) for i in range(10)]
+my_mssv = [randint(-100, 100) for i in range(10)]
 print('Исходный массив:', my_mssv)
 
 mssv = []
-sum = 0
+sum_el = 0
 mx = 0
 mn = 0
 max_el = my_mssv[0]
@@ -38,6 +38,6 @@ else:
         mssv.append(i)
 
 for i in mssv:
-    sum = sum + i
+    sum_el = sum_el + i
 
-print('Сумма элементов между min и max, не включающая их =', sum)
+print('Сумма элементов между min и max, не включающая их =', sum_el)
