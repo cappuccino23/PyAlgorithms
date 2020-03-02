@@ -25,6 +25,7 @@ for i in range(n - 1):
 
         if my_mssv[i] == my_mssv[j]:
             frequency = frequency + 1
+            num = my_mssv[i]
 
     if frequency > frequency_max:
         frequency_max = frequency
@@ -33,4 +34,4 @@ for i in range(n - 1):
 if frequency_max == 1:
     print('Все числа встречаются по', frequency_max, 'разу')
 else:
-    print('Число', my_mssv[i], 'встречается в массиве', frequency_max, 'раз')
+    print('Число', num, 'встречается в массиве', frequency_max, 'раз')
