@@ -31,9 +31,7 @@ b = []
 
 resheto_eratosfena(n)
 
-print(a)
-
 for i in range(0, len(a)):
 
     if i == m:
-        print(f'Выводим {m}-ное простое число {a[i]}')
+        print(f' {m}-ое простое число - {a[i]}')
