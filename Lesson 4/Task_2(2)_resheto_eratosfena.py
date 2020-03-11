@@ -22,14 +22,18 @@ def resheto_eratosfena(n):
     return a
 
 
-n = 100
-mssv = [i for i in range(1, n + 1)]
+m = int(input('Введите номер простого числа: '))
+n = 10000
+mssv = [i for i in range(1, n)]
 
-print('Исходный массив', mssv)
 a = []
 b = []
 
-
 resheto_eratosfena(n)
 
-print('Массив простых чисел', a)
+print(a)
+
+for i in range(0, len(a)):
+
+    if i == m:
+        print(f'Выводим {m}-ное простое число {a[i]}')
