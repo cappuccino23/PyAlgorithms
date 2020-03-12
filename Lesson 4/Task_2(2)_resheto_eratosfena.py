@@ -5,10 +5,10 @@
 # Блок-схема -
 
 
-def resheto_eratosfena(n):
+def resheto_eratosfena(m):
     c = 0  # количество делителей
 
-    for i in range(2, n + 1):
+    for i in range(2, m*m):
 
         for j in range(2, i):
 
@@ -23,15 +23,11 @@ def resheto_eratosfena(n):
 
 
 m = int(input('Введите номер простого числа: '))
-n = 10000
-mssv = [i for i in range(1, n)]
-
 a = []
-b = []
 
-resheto_eratosfena(n)
+resheto_eratosfena(m)
 
-for i in range(0, len(a)):
+for i in range(0, len(a)+1):
 
     if i == m:
-        print(f' {m}-ое простое число - {a[i]}')
+        print(f' {m}-ое простое число - {a[i-1]}')
