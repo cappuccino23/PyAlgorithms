@@ -1,0 +1,53 @@
+/usr/bin/python3.6 "/home/akiseleva/PycharmProjects/PyAlgorithms/Lesson 4/task_1.py"
+         58 function calls in 0.000 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.000    0.000 <string>:1(<module>)
+       10    0.000    0.000    0.000    0.000 random.py:173(randrange)
+       10    0.000    0.000    0.000    0.000 random.py:217(randint)
+       10    0.000    0.000    0.000    0.000 random.py:223(_randbelow)
+        1    0.000    0.000    0.000    0.000 task_1.py:10(sort_to_bubble)
+        1    0.000    0.000    0.000    0.000 task_1.py:11(<listcomp>)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.exec}
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+       10    0.000    0.000    0.000    0.000 {method 'bit_length' of 'int' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+       12    0.000    0.000    0.000    0.000 {method 'getrandbits' of '_random.Random' objects}
+
+
+         534 function calls in 0.002 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.002    0.002 <string>:1(<module>)
+      100    0.000    0.000    0.000    0.000 random.py:173(randrange)
+      100    0.000    0.000    0.000    0.000 random.py:217(randint)
+      100    0.000    0.000    0.000    0.000 random.py:223(_randbelow)
+        1    0.001    0.001    0.002    0.002 task_1.py:10(sort_to_bubble)
+        1    0.000    0.000    0.000    0.000 task_1.py:11(<listcomp>)
+        1    0.000    0.000    0.002    0.002 {built-in method builtins.exec}
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+      100    0.000    0.000    0.000    0.000 {method 'bit_length' of 'int' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+      128    0.000    0.000    0.000    0.000 {method 'getrandbits' of '_random.Random' objects}
+
+
+         5255 function calls in 0.117 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.117    0.117 <string>:1(<module>)
+     1000    0.001    0.000    0.003    0.000 random.py:173(randrange)
+     1000    0.000    0.000    0.003    0.000 random.py:217(randint)
+     1000    0.001    0.000    0.001    0.000 random.py:223(_randbelow)
+        1    0.113    0.113    0.116    0.116 task_1.py:10(sort_to_bubble)
+        1    0.000    0.000    0.003    0.003 task_1.py:11(<listcomp>)
+        1    0.000    0.000    0.117    0.117 {built-in method builtins.exec}
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+     1000    0.000    0.000    0.000    0.000 {method 'bit_length' of 'int' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+     1249    0.000    0.000    0.000    0.000 {method 'getrandbits' of '_random.Random' objects}

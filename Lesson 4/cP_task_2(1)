@@ -1,0 +1,57 @@
+Результат cProfile для задачи task2(1) без использования решета Эратосфена
+
+/usr/bin/python3.6 "/home/akiseleva/PycharmProjects/PyAlgorithms/Lesson 4/Task_2(1).py"
+         76 function calls in 0.000 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.000    0.000 <string>:1(<module>)
+       30    0.000    0.000    0.000    0.000 Task_2(1).py:10(proverka)
+        1    0.000    0.000    0.000    0.000 Task_2(1).py:19(mas_prost)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.exec}
+       31    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+       11    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+
+         1019 function calls in 0.003 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.003    0.003 <string>:1(<module>)
+      462    0.003    0.000    0.003    0.000 Task_2(1).py:10(proverka)
+        1    0.000    0.000    0.003    0.003 Task_2(1).py:19(mas_prost)
+        1    0.000    0.000    0.003    0.003 {built-in method builtins.exec}
+      463    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+       90    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+
+         14897 function calls in 0.419 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.418    0.418 <string>:1(<module>)
+     6996    0.413    0.000    0.413    0.000 Task_2(1).py:10(proverka)
+        1    0.005    0.005    0.418    0.418 Task_2(1).py:19(mas_prost)
+        1    0.000    0.000    0.419    0.419 {built-in method builtins.exec}
+     6997    0.001    0.000    0.001    0.000 {built-in method builtins.len}
+      900    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+
+         195361 function calls in 55.268 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000   55.268   55.268 <string>:1(<module>)
+    93178   55.170    0.001   55.170    0.001 Task_2(1).py:10(proverka)
+        1    0.083    0.083   55.268   55.268 Task_2(1).py:19(mas_prost)
+        1    0.000    0.000   55.268   55.268 {built-in method builtins.exec}
+    93179    0.011    0.000    0.011    0.000 {built-in method builtins.len}
+     9000    0.004    0.000    0.004    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
