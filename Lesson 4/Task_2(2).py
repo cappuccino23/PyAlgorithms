@@ -5,6 +5,7 @@
 # Блок-схема -
 
 import timeit
+import cProfile
 
 
 def resheto_eratosfena(m):
@@ -35,7 +36,12 @@ a = []
 
 # resheto_eratosfena(m)
 
-print(timeit.timeit('resheto_eratosfena(10)', number=100, globals=globals()))  # 0.06177425300120376
-print(timeit.timeit('resheto_eratosfena(100)', number=100, globals=globals()))  #
-print(timeit.timeit('resheto_eratosfena(1000)', number=100, globals=globals()))  #
-print(timeit.timeit('resheto_eratosfena(10000)', number=100, globals=globals()))  #
+#print(timeit.timeit('resheto_eratosfena(10)', number=100, globals=globals()))  # 0.060025059996405616
+#print(timeit.timeit('resheto_eratosfena(50)', number=100, globals=globals()))  # 33.03356583999994
+#print(timeit.timeit('resheto_eratosfena(100)', number=100, globals=globals()))  # 592.7037572080008
+#print(timeit.timeit('resheto_eratosfena(150)', number=100, globals=globals()))  #
+
+
+cProfile.run('resheto_eratosfena(10)')
+cProfile.run('resheto_eratosfena(50)')
+cProfile.run('resheto_eratosfena(100)')
