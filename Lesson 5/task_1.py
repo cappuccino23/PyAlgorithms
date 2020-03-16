@@ -9,7 +9,7 @@ a = int(input('Введите количество предприятий '))
 i = 1
 profit = 0
 company = {}
-avg_1
+avg_year = 0
 
 for i in range(1, a+1):
 
@@ -19,12 +19,17 @@ for i in range(1, a+1):
         b = int(input(f'Введите прибыль за {j} квартал: '))
         profit = (profit + b)
 
-    company[c] = profit
+    company[c] = profit/4
 
-for v in company:
+for v in company.values():
+    avg_year = avg_year + v
 
-    avg_1 = company.values() + avg_1
+print(f'Средняя прибыль {a} предприятий за год - {avg_year/a}')
 
-avrg_year = avg_1 / 4
+for k, v in company.items():
 
-print(company)
+    if v > avg_year:
+        print(f'Прибыль {k} выше среднего - {v}')
+    else:
+        print(f'Прибыль {k} ниже среднего - {v}')
+
