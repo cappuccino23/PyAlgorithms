@@ -5,16 +5,21 @@
 
 # блок-схема - https://drive.google.com/file/d/1Z8-yyz41SLz6gjC_ldIYYKGykrp7GItb/view?usp=sharing
 
-a = (input('Введите натуральное число: '))
+
+a = int(input('Введите натуральное число: '))
 b = 0
 c = 0
+d = 0
 
-for i in a:
+while a > 0:
 
-    if int(i) % 2 == 0:
-        b = b + 1
-    else:
+    b = a % 10
+    a = a // 10
+
+    if b % 2 == 0:
         c = c + 1
+    else:
+        d = d + 1
 
-print('Количество четных чисел:', b)
-print('Количество нечетных чисел:', c)
+print('Количество четных чисел:', c)
+print('Количество нечетных чисел:', d)
