@@ -26,13 +26,11 @@ for i in my_mssv:
 print('max -', max_el, '\nmin -', min_el)
 
 if mx > mn:
-    print('Массив элементов между min и max', my_mssv[mn + 1:mx])
 
     for i in my_mssv[mn + 1:mx]:
         mssv.append(i)
 
 else:
-    print('Массив элементов между max и min', my_mssv[mx + 1:mn])
     for i in my_mssv[mx + 1:mn]:
         mssv.append(i)
 
@@ -44,7 +42,6 @@ print('Сумма элементов между min и max, не включаю�
 # считаем примерное выделение памяти под переменные
 
 for s in [my_mssv, mssv, sum_el, mx, mn, max_el, min_el, d]:
-    print(sys.getsizeof(s))
     d = sys.getsizeof(s) + d
 
 print(f'\nВыделено {d} байт памяти под переменные')
