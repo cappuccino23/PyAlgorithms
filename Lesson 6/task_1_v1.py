@@ -1,5 +1,7 @@
 # По введенному числу определяем букву алфавита
 
+import sys
+
 def letter_v1(letter):
 
     if 1 <= letter <= 26:
@@ -64,3 +66,5 @@ def letter_v1(letter):
 
 letter = int(input('Введите число от 1 до 27: '))
 letter_v1(letter)
+
+print(sys.getsizeof(letter_v1(letter)))

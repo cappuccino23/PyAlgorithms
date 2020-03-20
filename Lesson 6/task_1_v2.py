@@ -7,7 +7,7 @@ def letter_v2(lttr):
         if lttr == key:
             print(f'Такому числу соотвествует буква алфавита - {letter.get(key)}')
 
-
+d = 0
 letter = {1: 'a',
           2: 'b',
           3: 'c',
@@ -40,4 +40,8 @@ lttr = int(input('Введите число от 1 до 27: '))
 
 letter_v2(lttr)
 
-print(sys.getsizeof(letter))
+for s in [letter, lttr, d]:
+    d = sys.getsizeof(s) + d
+
+print(d)
+
