@@ -2,10 +2,12 @@
 
 import sys
 
+
 def letter_v2(lttr):
     for key in letter:
         if lttr == key:
             print(f'Такому числу соотвествует буква алфавита - {letter.get(key)}')
+
 
 d = 0
 letter = {1: 'a',
@@ -43,5 +45,4 @@ letter_v2(lttr)
 for s in [letter, lttr, d]:
     d = sys.getsizeof(s) + d
 
-print(d)
-
+print(f'\nВыделено примерно {d} байт памяти под переменные')

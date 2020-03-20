@@ -14,4 +14,4 @@ for i in range(0, len(letter)):
 for s in [letter, lttr, d]:
     d = sys.getsizeof(s) + d
 
-print(d)
+print(f'\nВыделено {d} байт памяти под переменные')

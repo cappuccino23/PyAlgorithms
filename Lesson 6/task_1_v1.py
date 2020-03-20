@@ -2,8 +2,19 @@
 
 import sys
 
-def letter_v1(letter):
+def show(obj):
+    print(f'size = {sys.getsizeof(obj)}')
+    if hasattr(obj, '__iter__'):
+        if hasattr(obj, 'items'):
+            for key, value in obj.items():
+                show(key)
+                show(value)
+        elif not isinstance(obj, str):
+            for item in obj:
+                show(item)
 
+
+def letter_v1(letter):
     if 1 <= letter <= 26:
 
         if letter == 1:
@@ -64,7 +75,8 @@ def letter_v1(letter):
 
     return
 
-letter = int(input('Введите число от 1 до 27: '))
+
+letter = int(input('Введите число от 1 до 26: '))
 letter_v1(letter)
 
-print(sys.getsizeof(letter_v1(letter)))
+show(letter_v1)
