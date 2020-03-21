@@ -46,7 +46,7 @@ def merge_sort(mssv):
 
 def prnt_mssv(mssv):
     for i in mssv:
-        print('%.3f' % i, end=' ')
+        print('%.3f' % i, end='  ')
 
 
 # m = int(input('Введите размерность массива: '))
