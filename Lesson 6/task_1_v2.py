@@ -38,7 +38,7 @@ letter = {1: 'a',
           26: 'z'
           }
 
-lttr = int(input('Введите число от 1 до 27: '))
+lttr = int(input('Введите число от 1 до 26: '))
 
 letter_v2(lttr)
 
