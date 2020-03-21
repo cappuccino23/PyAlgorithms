@@ -2,17 +2,6 @@
 
 import sys
 
-def show(obj):
-    print(f'size = {sys.getsizeof(obj)}')
-    if hasattr(obj, '__iter__'):
-        if hasattr(obj, 'items'):
-            for key, value in obj.items():
-                show(key)
-                show(value)
-        elif not isinstance(obj, str):
-            for item in obj:
-                show(item)
-
 
 def letter_v1(letter):
     if 1 <= letter <= 26:
@@ -79,4 +68,6 @@ def letter_v1(letter):
 letter = int(input('Введите число от 1 до 26: '))
 letter_v1(letter)
 
-show(letter_v1)
+
+print(f'\nВыделено примерно {sys.getsizeof(letter)} байт памяти под переменные')
+
