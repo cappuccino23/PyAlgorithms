@@ -9,8 +9,8 @@
 
 from random import randint
 
-def sort_to_bubble(mssv_l4):
 
+def sort_to_bubble(mssv_l4):
     n = len(mssv_l4)
     for i in range(n):
 
@@ -23,7 +23,8 @@ def sort_to_bubble(mssv_l4):
     return
 
 
-m = int(input('Введите размерность массива '))
-mssv_l4 = [randint(-100, 100) for i in range(m)]
-sort_to_bubble(mssv_l4)
-print(mssv_l4)
+# m = int(input('Введите размерность массива '))
+mssv = [randint(-100, 100) for i in range(10)]
+print(mssv)
+sort_to_bubble(mssv)
+print(mssv)
