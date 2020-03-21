@@ -10,15 +10,15 @@
 from random import randint
 
 
-def sort_to_bubble(mssv_l4):
-    n = len(mssv_l4)
+def sort_to_bubble(mssv):
+    n = len(mssv)
     for i in range(n):
 
         for j in range(n - i - 1):
-            a, b = mssv_l4[j], mssv_l4[j + 1]
+            a, b = mssv[j], mssv[j + 1]
 
             if a < b:
-                mssv_l4[j], mssv_l4[j + 1] = b, a
+                mssv[j], mssv[j + 1] = b, a
 
     return
 
