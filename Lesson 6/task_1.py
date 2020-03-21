@@ -12,11 +12,10 @@ import sys
 # Не забудьте указать версию и разрядность вашей ОС и интерпретатора Python;
 # ● написать общий вывод: какой из трёх вариантов лучше и почему.
 
-# пояснения по дз
-# версия Python
-# Python 3.8.2 (tags/v3.8.2:7b3ab59, Feb 25 2020, 22:45:29) [MSC v.1916 32 bit (Intel)] on win32
-# print(f'Версия Python {sys.implementation}')
-# Версия Python namespace(cache_tag='cpython-37', hexversion=50791664, name='cpython', version=sys.version_info(major=3, minor=7, micro=4, releaselevel='final', serial=0))
+# пояснения по дз версия Python Python 3.8.2 (tags/v3.8.2:7b3ab59, Feb 25 2020, 22:45:29) [MSC v.1916 32 bit (Intel)]
+# on win32 print(f'Версия Python {sys.implementation}') Версия Python namespace(cache_tag='cpython-37',
+# hexversion=50791664, name='cpython', version=sys.version_info(major=3, minor=7, micro=4,
+# releaselevel='final', serial=0))
 
 # версия OS
 # Microsoft Windows [Version 10.0.18363.720]
@@ -25,11 +24,12 @@ import sys
 
 # Выводы:
 # размер выделяемой памяти довольно сильно зависит от типа выбранных данных
-# Выбранный вариант задачи не самый лучший для выбора, так как не предполагает большого влияния на обьем занимаемой памяти.
+# Выбранный вариант задачи не самый лучший для выбора, так как не предполагает большого влияния на обьем
+# занимаемой памяти.
 # Т.е. для задачи task_1 наиболее оптимальным будет вариант 1, но там достаточно много повторяющегося кода,
 # поэтому в данном случае целесообразнее выбрать третий вариант со списком.
 #
-# task_1_v1 size = 72 байт
+# task_1_v1 size = 14 байт
 # task_1_v2 size = 662 байт
 # task_1_v2 size = 158 байт
 #
