@@ -4,7 +4,7 @@ import sys
 d = 0
 letter = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z')
 
-lttr = int(input('Введите число от 1 до 27: '))
+lttr = int(input('Введите число от 1 до 26: '))
 
 for i in range(0, len(letter)):
     if lttr == i:
