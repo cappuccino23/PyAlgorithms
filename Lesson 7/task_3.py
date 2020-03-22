@@ -6,15 +6,63 @@
 # Примечание: задачу можно решить без сортировки исходного массива. Но если это слишком сложно,
 # используйте метод сортировки, который не рассматривался на уроках (сортировка слиянием также недопустима).
 
-from random import randint
+from random import randint, random, choice
 
-# [95, 13, 76, 92, 77, 4, 64, 30, 44, 100, 73]
+
+def sort_to_bubble(mssv):
+    n = len(mssv)
+    for i in range(n):
+
+        for j in range(n - i - 1):
+            a, b = mssv[j], mssv[j + 1]
+
+            if a > b:
+                mssv[j], mssv[j + 1] = b, a
+
+    return
+
+
+# mssv = [95, 13, 76, 92, 73, 4, 64, 30, 44, 100, 77]
 # [4, 13, 30, 44, 64, 73, 76, 77, 92, 95, 100]  медиана - 73
 
-m = int(input('Введите размерность массива '))
-mssv = [randint(1, 100) for i in range(2*m + 1)]
+#m = int(input('Введите размерность массива '))
+mssv = [randint(1, 100) for i in range(11)]
 print(mssv)
-a = (len(mssv) // 2) + 1
-print(mssv[a-1])
+
+#median = choice(mssv)
+median = mssv[0]
+print('Случайно выбранный элемент - ', median)
+a = 0
+b = 0
+
 
 # Нужно сравнить элементы относительно выбранной медианы в цикле.
+lenght_mssv = len(mssv)
+
+for i in range(lenght_mssv):
+
+    for j in range(lenght_mssv - i):
+
+        if median >= mssv[j]:
+            a = a + 1
+
+        if median <= mssv[j]:
+            b = b + 1
+
+    if a == b:
+        median = mssv[j]
+        print('медиана - ', median)
+
+    else:
+        a = 0
+        b = 0
+
+
+
+
+
+# часть для проверки
+sort_to_bubble(mssv)
+print(mssv)
+jizz = mssv[len(mssv)//2]
+print(jizz)
