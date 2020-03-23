@@ -25,11 +25,9 @@ def sort_to_bubble(mssv):
 # mssv = [95, 13, 76, 92, 73]
 # [4, 13, 30, 44, 64, 73, 76, 77, 92, 95, 100]  медиана - 73
 
-# m = int(input('Введите размерность массива '))
-mssv = [randint(1, 100) for i in range(5)]
+m = int(input('Введите число: '))
+mssv = [randint(1, 100) for i in range(2 * m + 1)]
 print(mssv)
-
-# median = mssv[0]
 
 a = 0
 b = 0
@@ -57,7 +55,6 @@ for i in range(lenght_mssv):
         b = 0
 
 
-# часть для проверки
+# часть СТРОГО для проверки и сравнения результатов
 sort_to_bubble(mssv)
-
 print('После сортировки: медиана - ', mssv[len(mssv) // 2])
