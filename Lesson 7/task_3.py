@@ -29,7 +29,6 @@ def sort_to_bubble(mssv):
 mssv = [randint(1, 100) for i in range(5)]
 print(mssv)
 
-
 # median = mssv[0]
 
 a = 0
@@ -50,13 +49,12 @@ for i in range(lenght_mssv):
         if median < mssv[j]:
             b = b + 1
 
-
     if a == b:
         median = mssv[i]
         print('медиана - ', median)
-
-    a = 0
-    b = 0
+    else:
+        a = 0
+        b = 0
 
 
 # часть для проверки
