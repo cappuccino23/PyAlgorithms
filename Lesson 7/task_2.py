@@ -30,7 +30,7 @@ def merge_sort(mssv):
 
             k = k + 1
 
-        # склеиваем массивы
+        # меняем местами эдементы
         while i < len(a):
             mssv[k] = a[i]
             i = i + 1
@@ -50,7 +50,7 @@ def prnt_mssv(mssv):
 
 
 # m = int(input('Введите размерность массива: '))
-mssv = [random.uniform(0, 50) for i in range(10)]
+mssv = [(random.random()*50) for i in range(10)]
 
 print('Исходный массив: ')
 prnt_mssv(mssv)
