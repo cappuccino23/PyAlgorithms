@@ -2,7 +2,7 @@
 # Отсортируйте по возрастанию методом слияния одномерный вещественный массив, заданный случайными
 # числами на промежутке [0; 50). Выведите на экран исходный и отсортированный массивы.
 
-import random
+from random import random
 
 
 def merge_sort(mssv):
@@ -50,7 +50,7 @@ def prnt_mssv(mssv):
 
 
 # m = int(input('Введите размерность массива: '))
-mssv = [(random.random()*50) for i in range(10)]
+mssv = [random.uniform(0, 50) for i in range(10)]
 
 print('Исходный массив: ')
 prnt_mssv(mssv)
