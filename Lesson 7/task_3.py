@@ -59,6 +59,5 @@ for i in range(lenght_mssv):
 
 # часть для проверки
 sort_to_bubble(mssv)
-print(mssv)
-jizz = mssv[len(mssv) // 2]
-print(jizz)
+
+print('После сортировки: медиана - ', mssv[len(mssv) // 2])
