@@ -7,7 +7,7 @@
 # ● постарайтесь сделать алгоритм умнее, но помните, что у вас должна остаться сортировка пузырьком.
 # Улучшенные версии сортировки, например, расчёской, шейкерная и другие в зачёт не идут.
 
-from random import randint
+from random import randint, random
 
 
 def sort_to_bubble(mssv):
@@ -24,7 +24,8 @@ def sort_to_bubble(mssv):
 
 
 # m = int(input('Введите размерность массива '))
-mssv = [randint(-100, 100) for i in range(10)]
+z = int(random()*100)
+mssv = [randint(-100, z) for i in range(10)]
 print(mssv)
 sort_to_bubble(mssv)
 print(mssv)
