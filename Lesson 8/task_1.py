@@ -19,7 +19,6 @@ def sub_str(mssv):
             if (s != hash_space) and (s != hash_str):
                 bbb.append(hashlib.sha1(s.encode('utf-8')).hexdigest())
 
-
     for x in bbb:
         if x not in mdict:
             mdict[x] = 1
@@ -29,7 +28,7 @@ def sub_str(mssv):
     for k, v in mdict.items():
         d = d + 1
 
-    return print(f'Количество подстрок - {d-1}')
+    return print(f'Количество подстрок - {d - 1}')
 
 
 mssv = input('Введите строку: ')
