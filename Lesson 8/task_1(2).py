@@ -25,4 +25,4 @@ print(mdict)
 
 for k, v in mdict.items():
     d = d + 1
-print(d)
+print(f'Количество подстрок - {d}')
